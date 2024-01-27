@@ -67,6 +67,7 @@
   font-weight: 500;
   line-height: 140%;
   border: 1px solid transparent;
+  cursor: pointer;
 }
 
 .radio__label:hover {
