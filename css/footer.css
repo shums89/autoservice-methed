@@ -27,7 +27,7 @@
 
 .footer__developers {
   grid-area: developers;
-  align-self: end;
+  justify-self: end;
 }
 
 .footer__dveloper {
@@ -40,4 +40,31 @@
 
 .footer__developer-link:hover {
   color: #d10014;
+}
+
+@media (max-width: 660px) {
+  .footer {
+    padding: 24px 0 20px;
+  }
+
+  .footer__container {
+    grid-template-areas:
+      "logo"
+      "copyright"
+      "developers";
+    gap: 0;
+  }
+
+  .footer__logo {
+    max-width: 230px;
+    margin-bottom: 32px;
+  }
+
+  .footer__copyright {
+    margin-bottom: 16px;
+  }
+
+  .footer__developers {
+    justify-self: start;
+  }
 }
